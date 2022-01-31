@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/external.css">
+        <link rel="stylesheet" href="CSS/Feedback.css">
+        <script src="JS/external.js"></script>
+        <script src="JS/Feedback.js"></script>
+        <title>Feedback</title>
+    </head>
+    <body>
+        <!--Navigation Bar Start-->
+        <div class="navbar">
+            <ul>
+                <li class="logo"><img src='Images/logo.png' alt='Logo' height='60' width='100'></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <li><a href="About.html">About</a></li>
+               
+            </ul>
+        </div>
+        <!--Navigation Bar End-->
+        <!--Anchors-->
+        <div class="anchors">
+            <span>Jump to:</span>
+            <form style='display:inline' action='#Footer'><button>Footer</button></form>
+        </div>
+
+        <div class='FeedbackForm' id='FeedbackForm'>
+            <!--Summary Form-->
+            <div id='SummaryForm'></div>
+            <div id='FormVisibility'>
+                <!--Form Title-->
+                <div>
+                    <h1 class='txt FormHeading'>Feedback Form</h1>
+                </div>
+                <ul>
+                    <li class='txt FormTxt'>Please Fill the Form Below if you Faced any Problems while using our Services</li>
+                </ul>
+                <!--Form-->
+                <div class='Form'>
+                    <form action='mailto:wiras.20200538@iit.ac.lk' method='post'>
+                        <!--First Name-->
+                        <div class='InputData'>
+                            <label for='FName'>First Name:<span class='ValidateField'>*</span></label>
+                            <input type='text' id='FName' name='FirstName' class='InputData1' placeholder="First Name Eg:Simon">
+                        </div>
+                        <!--Last Name-->
+                        <div class='InputData'>
+                            <label for='LName'>Last Name:<span class='ValidateField'>*</span></label>
+                            <input type='text' id='LName' name='LastName' class='InputData2' placeholder="Last Name Eg:Peter">  
+                        </div>
+                        <!--Email-->
+                        <div class='InputData'>
+                            <label for='Email'>E-mail Address:<span class='ValidateField'>*</span></label>
+                            <input type='text' id='Email' name='EmailAddress' class='InputData3' placeholder="E-mail Address Eg:SimonPeter@gmail.com">
+                        </div>
+                        <!--Query Type-->
+                        <div class='RadioButtons'>
+                            <div class='ButtonsTxt'>
+                                <ul><li>Please Select the Type of Query you want to Make:</li></ul><br>
+                            </div>
+                            <input type='Radio' id='Feedback' name='Query' value='Feedback'>
+                            <label for='Feedback' class='RadioLabel'>Feedback</label>
+                            <input type='Radio' id='Delivery' name='Query' value='Delivery'>
+                            <label for='Delivery'>Delivery</label>
+                            <input type='Radio' id='Product' name='Query' value='Product'>
+                            <label for='Product'>Product</label>
+                            <input type='Radio' id='Other' name='Query' value='Other'>
+                            <label for='Other'>Other</label>
+                        </div>
+                        <!--Query Text Field-->
+                        <div class='TxtArea'>
+                            <p>Enter Your Query Below:</p>
+                            <textarea id='TxtQuery' name='TxtQuery' rows='12' cols='65'></textarea> 
+                        </div>
+                        <!--Buttons-->
+                        <div class='FormButtons'>
+                            <button onclick='ViewQuery()' type='button'><span>View Query:</span></button>
+                            <button hidden type='Submit' id='SubmitButton'>Submit:</button>
+                        </div>
+                    </form>
+                </div>
+            </div>        
+        </div>
+    
+   
+
+    <footer id='Footer'>
+        <!--Back to top-->
+        <button onclick="topFunction()" id="topButton" class="topButton" title="Back to the top">↑ Top</button>
+
+        <!--Footer Logo-->
+        <div class="FooterLogo">
+            <img src='Images/logo.png' alt='' width='300' height='200'>
+        </div>
+
+        <!--Page Links-->
+        <div class='FooterHeading'>
+            <h2>Pages</h2>
+            <p>
+                <a href="#1">Home</a>
+                <a href="#2" style='padding-left: 47px;'>Movies</a>
+            </p>
+            <p>
+                <a href="#3">Games</a>
+                <a href="#4" style='padding-left: 40px;'>Products</a>
+            </p>
+            <p>
+                <a href='#5'>Quiz</a>
+                <a href='#6' style='padding-left: 58px;'>Gallery</a>
+            </p>
+            <p>
+                <a href='#7'>Feedback</a>
+                <a href='#8' style='padding-left:22px;'>About</a>
+            </p>
+        </div>
+        <!--Sitemap & PageEditor-->
+        <div class='FooterOther'>
+            <h2>Sitemap & Page Editor</h2>
+            <!--Sitemap Button-->
+            <form style='display:inline' action='Sitemap.html'><p><button class='FooterButton1'>Site-Map</button></p></form>
+            <!--Page-Editor Button--> 
+            <form style='display:inline' action='PageEditorS2.html'><p><button class='FooterButton2'>Page-Editor</button></p></form>  
+        </div>
+        <!--SocialMedia Links-->
+        <div class='FooterSocial'>
+            <h2>Connect With Us</h2>
+            <p>
+                <a href='https://www.instagram.com/'><img src='Images/IG_Logo.png' alt='IG' width='35' height='30' style='padding-left:10px'> Follow Us on Instagram</a>   
+            </p>
+            <p>
+                <a href='https://www.facebook.com/login.php'><img src='Images/FB_Logo.png' alt='FB' width='35' height='30' style='padding-left:10px'> Add Us on Facebook</a>
+            </p>
+            <p>
+                <a href='https://mobile.twitter.com/login'><img src='Images/Tw_Logo.jpg' alt='Tweet' width='35' height='30' style='padding-left:10px'> On Twitter</a>  
+            </p>
+            <p>
+                <a href='https://www.youtube.com/'><img src='Images/YT_Logo.png' alt='YT' width='35' height='30' style='padding-left:10px'> Subscribe Us on Youtube</a>
+            </p>
+        </div>
+
+    </footer>
+</body>
+  
+</html>
